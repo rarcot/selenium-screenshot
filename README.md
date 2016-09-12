@@ -16,7 +16,8 @@ $ java -jar selenium-shutterbug.jar /path/toinputjsonfile
 {
 	"driver": "C://chromedriver.exe",
 	"pages":
-	[{
+	[
+		{
 			"url": "http://www.google.com",
 			"size": "1.0",
 			"ssFileName": "test1",
