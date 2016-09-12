@@ -12,6 +12,7 @@ java -jar selenium-shutterbug.jar /path/toinputjsonfile
 Sample JSON file
 
 {
+"driver": "C://chromedriver.exe",
 "pages":
 [{
 		"url": "http://www.google.com",
@@ -28,4 +29,3 @@ Sample JSON file
 ]
 
 }
-
