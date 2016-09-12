@@ -1,6 +1,6 @@
 # selenium-screenshot
-Take page screenshots for visual QA of websites
-
+Take full page screenshots for visual QA of websites
+Scrolls both horizontally and vertically to take the screenshots. Uses 2D scaling to take the screenshots.
 
 git clone 
 
