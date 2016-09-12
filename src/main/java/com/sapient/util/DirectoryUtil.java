@@ -1,5 +1,8 @@
 package com.sapient.util;
 
+import com.sapient.selenium.shutterbug.SeleniumShutterBugImpl;
+import org.apache.log4j.Logger;
+
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.FileSystem;
@@ -13,13 +16,13 @@ import java.nio.file.attribute.FileAttribute;
  */
 public class DirectoryUtil {
 
-    public static void createDirectory(String directoryName) throws IOException{
-       try {
-           Path directoryPath = FileSystems.getDefault().getPath(directoryName);
-           Files.createDirectory(directoryPath);
-       }catch (IOException io){
-           System.out.println("Directory cannot be created "+io.getMessage());
-           throw io;
-       }
+    private final static Logger logger = Logger.getLogger(DirectoryUtil.class);
+
+    public static void createDirectory(String directoryName) throws IOException {
+        logger.info("Creating directory with directoryName : " + directoryName);
+        Path directoryPath = FileSystems.getDefault().getPath(directoryName);
+        if (!Files.exists(directoryPath)) {
+            Files.createDirectory(directoryPath);
+        }
     }
 }

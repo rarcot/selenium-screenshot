@@ -10,6 +10,8 @@ public class WebPages implements Serializable {
 
     private static final long serialVersionUID = -1659862226674106370L;
 
+    private String driver;
+
     private List<PageSnapshotAttributes> pages;
 
     public List<PageSnapshotAttributes> getPages() {
@@ -18,5 +20,13 @@ public class WebPages implements Serializable {
 
     public void setPages(List<PageSnapshotAttributes> pages) {
         this.pages = pages;
+    }
+
+    public String getDriver() {
+        return driver;
+    }
+
+    public void setDriver(String driver) {
+        this.driver = driver;
     }
 }
