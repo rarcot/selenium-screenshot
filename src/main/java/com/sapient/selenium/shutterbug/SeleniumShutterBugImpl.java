@@ -55,6 +55,7 @@ public class SeleniumShutterBugImpl {
             for (String url : webPageUrls) {
                 logger.info("Generating screen shot for url " + url);
                 driver = new ChromeDriver();
+                // set width of driver window based on JSON
                 driver.get(url);
             }
         }
@@ -63,9 +64,9 @@ public class SeleniumShutterBugImpl {
         } catch (IOException io) {
             logger.error("Cannot create directory {}", io);
         }
-        Shutterbug.shootPage(driver, ScrollStrategy.VERTICALLY)
+        Shutterbug.shootPage(driver, ScrollStrategy.BOTH_DIRECTIONS)
                 .withName(webPage.getSsFileName())
-                .withThumbnail(Double.parseDouble(webPage.getSize()))
+                // .withThumbnail(Double.parseDouble(webPage.getSize()))
                 .save(webPage.getSsDirectoryName());
         driver.quit();
     }
