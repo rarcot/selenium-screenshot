@@ -1,7 +1,7 @@
 # selenium-screenshot
 
-Take page screenshots for visual QA of websites
-
+Take full page screenshots for visual QA of websites
+Scrolls both horizontally and vertically to take the screenshots. Uses 2D scaling to take the screenshots.
 
 ```bash
 $ git clone 
@@ -17,17 +17,16 @@ If `mvn` is not installed: [install instructions](https://maven.apache.org/insta
 ```json
 {
 	"driver": "C://chromedriver.exe",
-	"pages":
-	[
+	"pages": [
 		{
-			"url": "http://www.google.com",
+			"url": "http://publicis.sapient.com/#!/",
 			"size": "1.0",
-			"ssFileName": "test1",
+			"ssFileName": "sapient_landing_page",
 			"ssDirectoryName": "C://testing"
 		}, {
-			"url": "http://www.google.com",
-			"size": "1.0",
-			"ssFileName": "test2",
+			"url": "http://publicis.sapient.com/#!/news",
+			"size": "0.3",
+			"ssFileName": "sapient_news_page",
 			"ssDirectoryName": "C://testing2"
 		}
 	]
