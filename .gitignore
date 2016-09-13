@@ -3,3 +3,5 @@ json/*
 !json/sample.json
 npm-debug.log
 target/
+webdrivers/*
+screenshots/*
