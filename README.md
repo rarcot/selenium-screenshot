@@ -9,6 +9,8 @@ $ mvn package
 $ java -jar selenium-shutterbug.jar /path/toinputjsonfile
 ```
 
+If `mvn` is not installed: [install instructions](https://maven.apache.org/install.html)
+
 
 ### Sample JSON file
 
