@@ -63,7 +63,7 @@ public class SeleniumShutterBugImpl {
         } catch (IOException io) {
             logger.error("Cannot create directory {}", io);
         }
-        Shutterbug.shootPage(driver, ScrollStrategy.BOTH_DIRECTIONS)
+        Shutterbug.shootPage(driver, ScrollStrategy.VERTICALLY)
                 .withName(webPage.getSsFileName())
                 .withThumbnail(Double.parseDouble(webPage.getSize()))
                 .save(webPage.getSsDirectoryName());
