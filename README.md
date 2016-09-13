@@ -9,10 +9,8 @@ $ mvn package
 $ java -jar selenium-shutterbug.jar /path/toinputjsonfile
 ```
 
-If `mvn` is not installed: [install instructions](https://maven.apache.org/install.html)
 
-
-### Sample JSON file
+## Sample JSON file
 
 ```json
 {
@@ -32,3 +30,9 @@ If `mvn` is not installed: [install instructions](https://maven.apache.org/insta
 	]
 }
 ```
+
+
+#@ OSX Install Guide
+1. install Java JDK: [Java Download link](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
+2. `$ brew isntall maven`
+3. `$ mvn package`
