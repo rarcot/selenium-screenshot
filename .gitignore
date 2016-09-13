@@ -1,3 +1,5 @@
-json/
+!json/
+json/*
+!json/sample.json
 npm-debug.log
 target/

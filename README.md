@@ -6,7 +6,7 @@ Scrolls both horizontally and vertically to take the screenshots. Uses 2D scalin
 ```bash
 $ git clone 
 $ mvn package
-$ java -jar selenium-shutterbug.jar /path/toinputjsonfile
+$ java -jar ./target/selenium-shutterbug.jar ../json/sample.json
 ```
 
 
