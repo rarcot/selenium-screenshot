@@ -35,4 +35,9 @@ $ java -jar selenium-shutterbug.jar /path/toinputjsonfile
 #@ OSX Install Guide
 1. install Java JDK: [Java Download link](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
 2. `$ brew isntall maven`
+	1. If you get this error `Error: Could not symlink bin/mvn /usr/local/bin is not writable.` then: 
+		```
+		sudo chown -R \`whoami\`:admin /usr/local/bin
+		brew link maven
+		```
 3. `$ mvn package`
